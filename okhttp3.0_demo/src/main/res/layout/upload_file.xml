@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_open_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开相册" />
+
+
+    <Button
+        android:id="@+id/btn_upload_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_open_gallery"
+        android:text="上传" />
+
+
+
+    <EditText
+        android:id="@+id/et_input_upload_url"
+        android:layout_width="match_parent"
+        android:hint="上传的服务器的URL路径"
+        android:text="http://172.16.53.12:8080/UploadDemo4/UploadFile"
+        android:layout_below="@+id/btn_upload_file"
+        android:layout_height="wrap_content"
+       />
+
+
+    <ImageView
+        android:id="@+id/iv_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
